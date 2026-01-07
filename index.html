@@ -23,10 +23,6 @@
         @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
         .animate-marquee { display: flex; animation: marquee 30s linear infinite; }
 
-        /* Subtle Floating */
-        @keyframes subtleFloat { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-15px); } }
-        .float { animation: subtleFloat 5s ease-in-out infinite; }
-
         .service-row { border-bottom: 1px solid rgba(255,255,255,0.08); transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1); }
         .service-row:hover { background-color: #fff; color: #000; padding-left: 40px; }
     </style>
@@ -81,7 +77,7 @@
             </div>
             <div class="space-y-40">
                 <div data-aos="fade-up">
-                    <img src="file:///C:/Users/ASUS/Pictures/Screenshots/kartu%20pelajar/WhatsApp%20Image%202026-01-06%20at%2011.12.19.jpeg" class="rounded-sm grayscale hover:grayscale-0 transition duration-1000 shadow-2xl">
+                    <img src="foto-rizky.jpg" class="rounded-sm grayscale hover:grayscale-0 transition duration-1000 shadow-2xl w-full">
                     <p class="mt-6 text-[10px] tracking-[0.3em] text-slate-500 uppercase">Principal Designer — Rizky Fauzan</p>
                 </div>
                 <div class="p-12 bg-zinc-900/30 border border-white/5 rounded-2xl" data-aos="fade-up">
@@ -114,7 +110,6 @@
 
     <section id="works" class="py-40 container mx-auto px-8">
         <h2 class="font-brand text-7xl mb-32 tracking-tighter" data-aos="fade-up">SELECTED <br> ARCHIVE</h2>
-        
         <div class="grid md:grid-cols-2 gap-x-20 gap-y-40">
             <div class="group cursor-pointer" data-aos="fade-up">
                 <div class="overflow-hidden aspect-[16/11] mb-8 bg-zinc-900">
@@ -125,7 +120,6 @@
                     <span class="text-[10px] tracking-widest uppercase text-slate-500">2026</span>
                 </div>
             </div>
-            
             <div class="group cursor-pointer md:mt-32" data-aos="fade-up">
                 <div class="overflow-hidden aspect-[16/11] mb-8 bg-zinc-900">
                     <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=1000" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition duration-1000">
@@ -139,13 +133,9 @@
     </section>
 
     <section id="contact" class="py-60 px-8 relative overflow-hidden text-center">
-        <div class="outline-text absolute top-0 left-0 opacity-10">WORK WITH ME WORK WITH ME</div>
+        <div class="outline-text absolute top-0 left-0 opacity-10 font-brand">WORK WITH ME</div>
         <div class="container mx-auto relative z-10">
             <h2 class="font-brand text-6xl md:text-8xl mb-16 leading-tight" data-aos="zoom-in">MARI MULAI <br> <span class="text-blue-600">DISKUSI.</span></h2>
-            <p class="max-w-xl mx-auto text-slate-400 font-light text-lg mb-20 italic">
-                Membuka peluang kolaborasi untuk proyek yang mengutamakan nilai estetika dan kualitas jangka panjang.
-            </p>
-            
             <div class="flex flex-wrap justify-center gap-12 font-bold text-xs tracking-[0.4em] uppercase">
                 <a href="https://instagram.com/ri.zky_188" target="_blank" class="hover:text-blue-600 transition underline underline-offset-8">Instagram</a>
                 <a href="https://wa.me/6281775720693" target="_blank" class="hover:text-blue-600 transition underline underline-offset-8">WhatsApp</a>
@@ -156,7 +146,6 @@
 
     <footer class="py-20 border-t border-white/5 mx-8 flex flex-col md:flex-row justify-between items-center gap-6">
         <div class="font-brand text-[10px] tracking-[0.4em] opacity-40">&copy; 2026 RIZKY FAUZAN STUDIO</div>
-        <div class="text-[8px] tracking-[0.5em] opacity-20 uppercase">All rights reserved • Crafted with Precision</div>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -165,4 +154,4 @@
         AOS.init({ duration: 1200, once: false });
     </script>
 </body>
-</html> 
+</html>
