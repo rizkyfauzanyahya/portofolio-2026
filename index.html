@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rizky Fauzan — Multi-Disciplinary Designer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Plus+Jakarta+Sans:wght@300;500;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        body { background-color: #050505; color: #fff; font-family: 'Plus Jakarta Sans', sans-serif; overflow-x: hidden; }
+        .font-brand { font-family: 'Syncopate', sans-serif; text-transform: uppercase; letter-spacing: -0.05em; }
+
+        /* Background Elements */
+        .noise { position: fixed; inset: 0; background: url('https://grainy-gradients.vercel.app/noise.svg'); opacity: 0.15; pointer-events: none; z-index: 99; }
+        .grid-bg { position: fixed; inset: 0; background-image: radial-gradient(#1a1a1a 1px, transparent 1px); background-size: 40px 40px; z-index: -2; }
+
+        /* Text Effects */
+        .outline-text { font-size: 18vw; -webkit-text-stroke: 1px rgba(255,255,255,0.08); color: transparent; line-height: 0.8; white-space: nowrap; user-select: none; font-family: 'Syncopate'; }
+        
+        @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+        .animate-marquee { display: flex; animation: marquee 30s linear infinite; }
+
+        /* Subtle Floating */
+        @keyframes subtleFloat { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-15px); } }
+        .float { animation: subtleFloat 5s ease-in-out infinite; }
+
+        .service-row { border-bottom: 1px solid rgba(255,255,255,0.08); transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1); }
+        .service-row:hover { background-color: #fff; color: #000; padding-left: 40px; }
+    </style>
+</head>
+<body>
+
+    <div class="noise"></div>
+    <div class="grid-bg"></div>
+
+    <nav class="fixed top-0 w-full z-[100] border-b border-white/5 bg-black/60 backdrop-blur-xl">
+        <div class="max-w-screen-2xl mx-auto px-8 py-6 flex justify-between items-center">
+            <div class="font-brand text-lg font-bold">RIZKY<span class="text-blue-600">FAUZAN</span></div>
+            <div class="hidden md:flex gap-12 text-[10px] font-bold tracking-[0.4em] items-center">
+                <a href="#about" class="hover:text-blue-600 transition">STUDIO</a>
+                <a href="#works" class="hover:text-blue-600 transition">PORTFOLIO</a>
+                <a href="#contact" class="bg-white text-black px-6 py-2 rounded-full hover:bg-blue-600 hover:text-white transition">INQUIRY</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="min-h-screen flex items-center relative pt-20">
+        <div class="outline-text absolute top-1/2 left-0 -translate-y-1/2 opacity-30 italic">EXCELLENCE EXCELLENCE</div>
+        <div class="container mx-auto px-8 relative z-10">
+            <p class="text-blue-600 font-bold tracking-[0.4em] text-[10px] mb-6" data-aos="fade-up">BASED IN INDONESIA • AVAILABLE GLOBALLY</p>
+            <h1 class="text-[12vw] md:text-[9vw] font-brand font-bold leading-[0.85] mb-12">
+                <span class="block" data-aos="fade-right" data-aos-delay="200">ELEVATED</span>
+                <span class="block text-blue-600 pl-[8vw]" data-aos="fade-left" data-aos-delay="400">AESTHETICS</span>
+            </h1>
+            <div class="flex flex-col md:flex-row gap-12 items-start md:items-end">
+                <p class="max-w-md text-slate-400 text-lg leading-relaxed font-light" data-aos="fade-up" data-aos-delay="600">
+                    Menciptakan solusi visual yang menjembatani fungsionalitas dan seni tinggi. Fokus pada pengembangan identitas merek yang abadi.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="py-10 border-y border-white/5 overflow-hidden">
+        <div class="animate-marquee font-brand text-sm tracking-[0.8em] opacity-40 uppercase">
+            <span>&nbsp;Visual Identity • Brand Strategy • Editorial Design • Digital Experience • Art Direction • Motion Graphics •&nbsp;</span>
+            <span>&nbsp;Visual Identity • Brand Strategy • Editorial Design • Digital Experience • Art Direction • Motion Graphics •&nbsp;</span>
+        </div>
+    </div>
+
+    <section id="about" class="py-40 px-8 container mx-auto">
+        <div class="grid md:grid-cols-2 gap-32 items-start">
+            <div class="sticky top-40" data-aos="fade-right">
+                <h2 class="font-brand text-4xl mb-12 leading-tight">MENGUBAH <br> KONSEP MENJADI <br> <span class="text-blue-600 italic">REALITAS VISUAL</span></h2>
+                <div class="w-20 h-1 bg-blue-600 mb-12"></div>
+                <p class="text-slate-400 text-lg font-light leading-relaxed mb-8">
+                    Setiap proyek adalah perjalanan intelektual. Saya mendalami nilai inti dari setiap klien untuk merancang narasi visual yang otentik, prestisius, dan berdampak luas.
+                </p>
+            </div>
+            <div class="space-y-40">
+                <div data-aos="fade-up">
+                    <img src="file:///C:/Users/ASUS/Pictures/Screenshots/kartu%20pelajar/WhatsApp%20Image%202026-01-06%20at%2011.12.19.jpeg" class="rounded-sm grayscale hover:grayscale-0 transition duration-1000 shadow-2xl">
+                    <p class="mt-6 text-[10px] tracking-[0.3em] text-slate-500 uppercase">Principal Designer — Rizky Fauzan</p>
+                </div>
+                <div class="p-12 bg-zinc-900/30 border border-white/5 rounded-2xl" data-aos="fade-up">
+                    <h3 class="font-brand text-xl mb-6 text-blue-600">PHILOSOPHY</h3>
+                    <p class="text-slate-300 font-light italic">"Desain bukan sekadar apa yang terlihat, namun bagaimana sebuah pesan dirasakan tanpa perlu diucapkan."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-40 bg-white text-black">
+        <div class="container mx-auto px-8">
+            <p class="font-bold tracking-[0.5em] text-[10px] mb-20 text-blue-600 text-center uppercase">Core Expertise</p>
+            <div class="max-w-5xl mx-auto">
+                <div class="service-row py-16 group flex flex-col md:flex-row justify-between items-start md:items-center px-6">
+                    <span class="text-5xl font-brand font-bold">01/ BRANDING</span>
+                    <p class="max-w-xs text-xs uppercase tracking-widest leading-loose mt-4 md:mt-0 font-medium">Pengembangan identitas visual yang komprehensif dan eksklusif.</p>
+                </div>
+                <div class="service-row py-16 group flex flex-col md:flex-row justify-between items-start md:items-center px-6">
+                    <span class="text-5xl font-brand font-bold">02/ EDITORIAL</span>
+                    <p class="max-w-xs text-xs uppercase tracking-widest leading-loose mt-4 md:mt-0 font-medium">Kurasi layout dan tipografi untuk publikasi fisik maupun digital.</p>
+                </div>
+                <div class="service-row py-16 group flex flex-col md:flex-row justify-between items-start md:items-center px-6">
+                    <span class="text-5xl font-brand font-bold">03/ DIRECTION</span>
+                    <p class="max-w-xs text-xs uppercase tracking-widest leading-loose mt-4 md:mt-0 font-medium">Navigasi kreatif untuk memastikan konsistensi estetika merek.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="works" class="py-40 container mx-auto px-8">
+        <h2 class="font-brand text-7xl mb-32 tracking-tighter" data-aos="fade-up">SELECTED <br> ARCHIVE</h2>
+        
+        <div class="grid md:grid-cols-2 gap-x-20 gap-y-40">
+            <div class="group cursor-pointer" data-aos="fade-up">
+                <div class="overflow-hidden aspect-[16/11] mb-8 bg-zinc-900">
+                    <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=1000" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition duration-1000">
+                </div>
+                <div class="flex justify-between items-end border-b border-white/10 pb-6">
+                    <h3 class="text-2xl font-light">LUNAR COFFEE IDENTITY</h3>
+                    <span class="text-[10px] tracking-widest uppercase text-slate-500">2026</span>
+                </div>
+            </div>
+            
+            <div class="group cursor-pointer md:mt-32" data-aos="fade-up">
+                <div class="overflow-hidden aspect-[16/11] mb-8 bg-zinc-900">
+                    <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=1000" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition duration-1000">
+                </div>
+                <div class="flex justify-between items-end border-b border-white/10 pb-6">
+                    <h3 class="text-2xl font-light">NEO-FUTURE POSTER</h3>
+                    <span class="text-[10px] tracking-widest uppercase text-slate-500">2025</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-60 px-8 relative overflow-hidden text-center">
+        <div class="outline-text absolute top-0 left-0 opacity-10">WORK WITH ME WORK WITH ME</div>
+        <div class="container mx-auto relative z-10">
+            <h2 class="font-brand text-6xl md:text-8xl mb-16 leading-tight" data-aos="zoom-in">MARI MULAI <br> <span class="text-blue-600">DISKUSI.</span></h2>
+            <p class="max-w-xl mx-auto text-slate-400 font-light text-lg mb-20 italic">
+                Membuka peluang kolaborasi untuk proyek yang mengutamakan nilai estetika dan kualitas jangka panjang.
+            </p>
+            
+            <div class="flex flex-wrap justify-center gap-12 font-bold text-xs tracking-[0.4em] uppercase">
+                <a href="https://instagram.com/ri.zky_188" target="_blank" class="hover:text-blue-600 transition underline underline-offset-8">Instagram</a>
+                <a href="https://wa.me/6281775720693" target="_blank" class="hover:text-blue-600 transition underline underline-offset-8">WhatsApp</a>
+                <a href="mailto:yahyarizky809@gmail.com" class="hover:text-blue-600 transition underline underline-offset-8">Email</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-20 border-t border-white/5 mx-8 flex flex-col md:flex-row justify-between items-center gap-6">
+        <div class="font-brand text-[10px] tracking-[0.4em] opacity-40">&copy; 2026 RIZKY FAUZAN STUDIO</div>
+        <div class="text-[8px] tracking-[0.5em] opacity-20 uppercase">All rights reserved • Crafted with Precision</div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        lucide.createIcons();
+        AOS.init({ duration: 1200, once: false });
+    </script>
+</body>
+</html> 
